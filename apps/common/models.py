@@ -1,5 +1,7 @@
-from django.db import models
 import uuid
+
+from django.db import models
+
 
 #used as a base class for other models. Any model that inherits from TimeStampedUUIDModel will automatically inherit its fields and functionality, including the auto-generated primary key and unique UUID
 class TimeStampedUUIDModel(models.Model):
