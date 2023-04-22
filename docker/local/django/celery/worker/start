@@ -4,4 +4,4 @@ set -o errexit
 
 set -o nounset
 
-celery A reat_estate worker -l INFO
+watchmedo auto-restart -d real_estate/ -p "*.py" -- celery worker -A real_estate --loglevel=info
