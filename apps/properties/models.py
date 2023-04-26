@@ -20,8 +20,6 @@ class PropertyPublishedManager(models.Manager):
             .get_queryset()
             .filter(published_status=True)
         )
-
-
 class Property(TimeStampedUUIDModel):
     class AdvertType(models.TextChoices):
         FOR_SALE = "For Sale", _("For Sale")
