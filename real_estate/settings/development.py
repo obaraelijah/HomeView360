@@ -10,7 +10,6 @@ DEFAULT_FROM_EMAIL = "info@real-estate.com"
 DOMAIN = env("DOMAIN")
 SITE_NAME = "Real Estate"
 
-
 DATABASES = {
     "default": {
         "ENGINE": env("POSTGRES_ENGINE"),

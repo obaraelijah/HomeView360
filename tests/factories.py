@@ -6,7 +6,6 @@ from real_estate.settings.base import AUTH_USER_MODEL
 
 faker = FakerFactory.create()
 
-
 @factory.django.mute_signals(post_save)
 class ProfileFactory(factory.django.DjangoModelFactory):
     user = factory.SubFactory("tests.factories.UserFactory")
@@ -28,8 +27,6 @@ class ProfileFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = Profile
-
-
 @factory.django.mute_signals(post_save)
 class UserFactory(factory.django.DjangoModelFactory):
     first_name = factory.LazyAttribute(lambda x: faker.first_name())
