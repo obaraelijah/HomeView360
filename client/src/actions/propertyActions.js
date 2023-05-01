@@ -1,5 +1,9 @@
 import axios from 'axios';
-import { PROPERTY_LIST_FAIL, PROPERTY_LIST_REQUEST, PROPERTY_LIST_SUCCESS } from './types';
+import { 
+    PROPERTY_LIST_FAIL, 
+    PROPERTY_LIST_REQUEST, 
+    PROPERTY_LIST_SUCCESS 
+} from './types';
 
 
 export const listProperties = () => async (dispatch) =>{
