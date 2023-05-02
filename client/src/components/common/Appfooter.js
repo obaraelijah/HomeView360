@@ -1,7 +1,6 @@
 import React from 'react';
 import { BackTop } from 'antd';
 import { Link } from 'react-router-dom';
-
 export class Appfooter  {
   render() {
     return (
