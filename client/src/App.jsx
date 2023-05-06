@@ -11,6 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import PropertiesPage from "./pages/PropertiesPage";
 import RegisterPage from "./pages/RegisterPage";
 
+
 const App = () => {
 	return (
 		<>
