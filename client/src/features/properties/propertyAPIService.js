@@ -1,7 +1,6 @@
-//async api calls
 import axios from "axios";
 
-//get properties
+//get properties asynchrously
 const getProperties  = async () => {
     const response = await axios.get("/api/v1/properties/all/");
 	return response.data;
