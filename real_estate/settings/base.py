@@ -1,6 +1,5 @@
 from pathlib import Path
 from datetime import timedelta
-
 import environ
 
 env = environ.Env(
@@ -94,9 +93,6 @@ WSGI_APPLICATION = 'real_estate.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -116,9 +112,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -128,10 +121,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/staticfiles/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
@@ -150,9 +139,6 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     )
 }
-
-
-
 SIMPLE_JWT = {
     "AUTH_HEADER_TYPES": (
         "Bearer",
@@ -187,11 +173,9 @@ DJOSER = {
 
 import logging
 import logging.config
-
 from django.utils.log import DEFAULT_LOGGING
 
 logger = logging.getLogger(__name__)
-
 LOG_LEVEL = "INFO"
 
 logging.config.dictConfig(
